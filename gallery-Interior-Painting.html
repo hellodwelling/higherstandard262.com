@@ -881,7 +881,7 @@
             <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 6,
+        amountOfImages: 3,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -919,42 +919,6 @@
                     <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
-                                <video preload="metadata" class="rounded shadow-md object-contain w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/10518a07-3e8c-4e09-90d7-de54b6225991.undefined#t=0.5" >
-                                </video>
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            
-                                <video preload="metadata" class="rounded shadow-md object-contain w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/08f6ae92-9e3f-46b1-bd38-7472f7591086.undefined#t=0.5" >
-                                </video>
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c8102684-dbae-490b-a9e1-f8816d056860.png" alt="Interior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
                             
                         </div>
@@ -969,25 +933,7 @@
         
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            
-                                <video preload="metadata" class="rounded shadow-md object-contain w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0a337ccc-0404-4fa8-b7b1-5215cdb5fd4d.undefined#t=0.5" >
-                                </video>
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 5; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0f6be89d-d329-4ceb-81b6-5c2a0a120c21.png" alt="Interior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
@@ -1053,37 +999,13 @@
                                     </li>
                                 
                                     <li class="flex flex-col" x-show="activeImage === 1">
-                                        
-                                            <video preload="metadata" class="rounded shadow-md object-contain w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/10518a07-3e8c-4e09-90d7-de54b6225991.undefined#t=0.5" >
-                                            </video>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <li class="flex flex-col" x-show="activeImage === 2">
-                                        
-                                            <video preload="metadata" class="rounded shadow-md object-contain w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/08f6ae92-9e3f-46b1-bd38-7472f7591086.undefined#t=0.5" >
-                                            </video>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <li class="flex flex-col" x-show="activeImage === 3">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c8102684-dbae-490b-a9e1-f8816d056860.png" alt="Interior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
                                 
-                                    <li class="flex flex-col" x-show="activeImage === 4">
-                                        
-                                            <video preload="metadata" class="rounded shadow-md object-contain w-full h-60" loading="lazy" controls> <source src="https://landing-page-app-hero-images.s3.amazonaws.com/media/0a337ccc-0404-4fa8-b7b1-5215cdb5fd4d.undefined#t=0.5" >
-                                            </video>
-                                            <p lorem="1" class="mt-3 text-gray-500"></p>
-                                        
-                                    </li>
-                                
-                                    <li class="flex flex-col" x-show="activeImage === 5">
+                                    <li class="flex flex-col" x-show="activeImage === 2">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0f6be89d-d329-4ceb-81b6-5c2a0a120c21.png" alt="Interior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
