@@ -879,7 +879,7 @@
             <div
     x-data="{
         activeImage: 0,
-        amountOfImages: 1,
+        amountOfImages: 4,
         next() {
             if (this.activeImage < this.amountOfImages - 1)
                 this.activeImage ++;
@@ -898,6 +898,57 @@
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 0; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/123fb446-eac6-4f95-a63f-61225550bc88.jpeg" alt="Exterior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 1; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/7d80915f-2214-4b3d-9edc-d3bb1b7a75da.jpeg" alt="Exterior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
+                            
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/9f5f8b19-b58b-46ca-b9f0-e495660bdeb8.jpeg" alt="Exterior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/15151c00-ae1c-4ae6-b50a-8b2dff6d4d2f.jpeg" alt="Exterior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
@@ -956,6 +1007,27 @@
                             <ul tabindex="0" role="listbox" aria-labelledby="carousel-content-label" class="relative w-full">
                                 
                                     <li class="flex flex-col" x-show="activeImage === 0">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/123fb446-eac6-4f95-a63f-61225550bc88.jpeg" alt="Exterior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <li class="flex flex-col" x-show="activeImage === 1">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7d80915f-2214-4b3d-9edc-d3bb1b7a75da.jpeg" alt="Exterior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <li class="flex flex-col" x-show="activeImage === 2">
+                                            
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9f5f8b19-b58b-46ca-b9f0-e495660bdeb8.jpeg" alt="Exterior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
+                                            <p lorem="1" class="mt-3 text-gray-500"></p>
+                                        
+                                    </li>
+                                
+                                    <li class="flex flex-col" x-show="activeImage === 3">
                                             
                                             <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/15151c00-ae1c-4ae6-b50a-8b2dff6d4d2f.jpeg" alt="Exterior Painting for Higher Standard Painting in Lake Geneva, WI" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
@@ -1345,46 +1417,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-240851"
-                                                    name="240851"
+                                                    id="contact-service-240855"
+                                                    name="240855"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Interior Painting"
                                             />
-                                            <label for="contact-label-service-240851" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
+                                            <label for="contact-label-service-240855" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-240852"
-                                                    name="240852"
+                                                    id="contact-service-240856"
+                                                    name="240856"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior Painting"
                                             />
-                                            <label for="contact-label-service-240852" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
+                                            <label for="contact-label-service-240856" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-240853"
-                                                    name="240853"
+                                                    id="contact-service-240857"
+                                                    name="240857"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Kitchen and Cabinet Refinishing"
                                             />
-                                            <label for="contact-label-service-240853" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
+                                            <label for="contact-label-service-240857" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-240854"
-                                                    name="240854"
+                                                    id="contact-service-240858"
+                                                    name="240858"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Other Painting Services"
                                             />
-                                            <label for="contact-label-service-240854" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
+                                            <label for="contact-label-service-240858" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
                                         </div>
                                         
                                     </div>
@@ -1413,46 +1485,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-240851"
-                                                    name="240851"
+                                                    id="contact-service-240855"
+                                                    name="240855"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Interior Painting"
                                             />
-                                            <label for="contact-label-service-240851" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
+                                            <label for="contact-label-service-240855" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-240852"
-                                                    name="240852"
+                                                    id="contact-service-240856"
+                                                    name="240856"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior Painting"
                                             />
-                                            <label for="contact-label-service-240852" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
+                                            <label for="contact-label-service-240856" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-240853"
-                                                    name="240853"
+                                                    id="contact-service-240857"
+                                                    name="240857"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Kitchen and Cabinet Refinishing"
                                             />
-                                            <label for="contact-label-service-240853" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
+                                            <label for="contact-label-service-240857" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-240854"
-                                                    name="240854"
+                                                    id="contact-service-240858"
+                                                    name="240858"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Other Painting Services"
                                             />
-                                            <label for="contact-label-service-240854" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
+                                            <label for="contact-label-service-240858" class="ml-3 text-sm font-medium text-gray-700">Other Painting Services</label>
                                         </div>
                                         
                                     </div>
